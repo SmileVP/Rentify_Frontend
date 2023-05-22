@@ -90,9 +90,13 @@ function Login() {
                     ) : null}
                   </div>
 
-                  <div className="pt-3">
+                  <div className="pt-3 d-flex justify-content-around">
                     <Button variant="outline-secondary" type="submit">
                       Login
+                    </Button>
+
+                    <Button variant="outline-secondary" onClick={()=>navigate ("/admin-sign-up")}>
+                      Admin SignUp
                     </Button>
                   </div>
                 </Form>

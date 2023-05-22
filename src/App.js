@@ -13,6 +13,7 @@ import AllProducts from "./Admin/AllProducts";
 import AddProducts from "./Admin/AddProducts";
 import OrderStatus from "./Admin/OrderStatus";
 import OrderedItems from "./products/OrderedItems";
+import AdminSignUp from "./Admin/AdminSignUp";
 
 export const url = "https://rentify-backend-w85a.onrender.com";
 
@@ -21,6 +22,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+        <Route path="/admin-sign-up" element={<AdminSignUp />} />
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/customer-login" element={<CustomerLogin />} />
           <Route path="/dashboard" element={<Dashboard />} />
