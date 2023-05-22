@@ -1,13 +1,372 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: cursive;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* home page */
+.home {
+  width: 100%;
+  background-size: cover;
+  background-color: #202124;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+
+#home {
+  background-image: url("../src/Asset/Gadgets\ background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* about page */
+#about {
+  background-image: url("../src/Asset/shake\ hand.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+  margin-top: 0.5em;
+}
+
+.aboutUs {
+  margin-top: 2em;
+}
+
+.about-name {
+  color: red;
+}
+
+.about-motto {
+  color: darkgreen;
+}
+
+/* login page */
+
+.login {
+  background-image: url("../src/Asset/Gadgets\ background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  width: 450px;
+  height: 400px;
+  background-color: rgb(27, 26, 26);
+  border-radius: 1em;
+  margin-bottom: 2em;
+  border: 2px solid rgb(248, 242, 248);
+  padding: 1em;
+}
+
+.login-title {
+  display: flex;
+  justify-content: center;
+  color: rgb(210, 193, 193);
+}
+
+.login-header {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  color: rgb(157, 177, 157);
+}
+
+/* admin sign up */
+
+.admin-signUp {
+  background-image: url("../src/Asset/Admin-SignUp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  overflow-x: scroll;
+}
+
+.admin-signUpForm {
+  width: 450px;
+  height: 100vh;
+}
+
+.admin-signUp-title {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.admin-SignUp-header {
+  font-size: 2em;
+}
+
+/* customer sign up */
+.customer-signUp {
+  background-image: url("../src/Asset/Customer-signUp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  overflow-x: scroll;
+}
+
+.customer-signUpForm {
+  width: 450px;
+  height: 100vh;
+}
+
+.customer-signUp-title {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.customer-SignUp-header {
+  font-size: 2em;
+}
+
+/* customer login */
+
+.customer-login {
+  background-image: url("../src/Asset/Gadgets\ background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customerLoginForm {
+  width: 450px;
+  height: 500px;
+  background-color: rgb(27, 26, 26);
+  border-radius: 1em;
+  margin-bottom: 2em;
+  border: 2px solid rgb(248, 242, 248);
+  padding: 1em;
+}
+
+.customerLogin-title {
+  display: flex;
+  justify-content: center;
+  color: brown;
+}
+
+.customerLogin-header {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  color: darkgreen;
+}
+
+/* Navigation  */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar {
+  color: white;
+  font-weight: 500;
+}
+
+#basic-nav-dropdown {
+  color: #808dad;
+}
+
+.navlist {
+  color: #808dad;
+}
+button.navbar-toggler,
+button.navbar-toggler.collapsed {
+  background-color: lightgray;
+}
+
+.navigation {
+  position: fixed;
+  background-color: #202124;
+  transition: 0.2s;
+  box-shadow: 1px 1px 1.1em yellow;
+}
+
+.me-auto {
+  margin-left: 40rem;
+  gap: 4rem;
+  color: white;
+}
+
+/* Home Page design */
+.fg-theme {
+  color: red;
+}
+
+.caption-header {
+  margin-top: 10em;
+  margin-left: 5rem;
+  color: white;
+}
+
+.home-hd {
+  font-size: 2em;
+}
+.name-hd {
+  color: #04a950;
+}
+
+#home h2 {
+  font-size: 3.5em;
+}
+
+/* Contact page design*/
+.contact-hd {
+  color: #04a950;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid #04a950;
+  border-bottom-right-radius: 1em;
+  border-top-left-radius: 1em;
+  font-size: 1.8em;
+  margin-top: 5em;
+}
+
+.contact-info {
+  width: 100%;
+  height: 15em;
+  margin-top: 2em;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid yellow;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.mobile-details {
+  font-size: 1em;
+  color: white;
+  margin-left: 1.2em;
+}
+
+.mail-details {
+  font-size: 1em;
+  color: white;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.img-details {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 1em;
+}
+
+.media-link img:hover {
+  box-shadow: 1px 1px 1.1em gray;
+}
+
+.menu-body {
+  background-color: rgb(49, 48, 48);
+  width: 100%;
+  height: 100%;
+  padding-top: 2em;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.cart-header {
+  background-color: lightgrey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cart-title {
+  background-color: rgb(58, 56, 56);
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 1.5em;
+  border-radius: 0.5em;
+}
+
+.cart-total {
+  background-color: white;
+  border-radius: 1em;
+  width: 250px;
+  height: 200px;
+}
+
+.cart-info {
+  display: flex;
+  justify-content: center;
+}
+
+.order-success {
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.your-orders {
+  background-color: rgb(27, 28, 30);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.your-orders-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.admin-home {
+  background-color: rgb(45, 47, 50);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.add-products {
+  width: 25em;
+  background-color: rgb(45, 47, 50);
+  height: 100vh;
 }
