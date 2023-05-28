@@ -15,6 +15,7 @@ import OrderStatus from "./Admin/OrderStatus";
 import OrderedItems from "./products/OrderedItems";
 import AdminSignUp from "./Admin/AdminSignUp";
 
+//backend url
 export const url = "https://rentify-backend-w85a.onrender.com";
 
 function App() {
