@@ -297,14 +297,6 @@ button.navbar-toggler.collapsed {
   gap: 1em;
 }
 
-.cart-header {
-  background-color: lightgrey;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-}
 
 .cart-title {
   background-color: rgb(58, 56, 56);
