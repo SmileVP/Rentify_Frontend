@@ -20,7 +20,7 @@ import AdminForgotPassword from "./Admin/AdminForgotPassword";
 import AdminResetPassword from "./Admin/AdminResetPassword";
 
 //backend url
-export const url = "https://rentify-backend-w85a.onrender.com";
+ export const url = "https://rentify-backend-w85a.onrender.com";
 
 function App() {
   return (
