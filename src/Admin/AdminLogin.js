@@ -30,7 +30,7 @@ function Login() {
         navigate("/adminHome");
       }
     } catch (err) {
-      toast.error(err.response.data.message)
+      toast.error(err.response.data.message);
       console.log(err);
     }
   };
@@ -95,7 +95,17 @@ function Login() {
                       Login
                     </Button>
 
-                    <Button variant="outline-secondary" onClick={()=>navigate ("/admin-sign-up")}>
+                    <Button
+                      variant="outline-secondary"
+                      onClick={() => navigate("/admin-forgotPassword")}
+                    >
+                      ForgotPassword
+                    </Button>
+
+                    <Button
+                      variant="outline-secondary"
+                      onClick={() => navigate("/admin-sign-up")}
+                    >
                       Admin SignUp
                     </Button>
                   </div>

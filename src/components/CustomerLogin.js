@@ -32,7 +32,7 @@ function CustomerLogin() {
         navigate("/products");
       }
     } catch (err) {
-      toast.error(err.response.data.message)
+      toast.error(err.response.data.message);
       console.log(err);
     }
   };
@@ -105,6 +105,12 @@ function CustomerLogin() {
                       Login
                     </Button>
 
+                    <Button
+                      variant="outline-secondary"
+                      onClick={() => navigate("/forgetPassword")}
+                    >
+                      Forget password
+                    </Button>
                   </div>
                 </Form>
 

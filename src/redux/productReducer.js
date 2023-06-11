@@ -1,19 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
-import { url } from "../App";
-
-//to get all the product details
-export const fetchProducts = createAsyncThunk(
-  "/product/fetchProducts",
-  async () => {
-    try {
-      let response = await axios.get(`${url}/product/product-details`);
-      return response;
-    } catch (error) {
-      console.log(error);
-    }
-  }
-);
+import {createSlice } from "@reduxjs/toolkit";
 
 export const productReducer = createSlice({
   name: "products",
@@ -21,23 +6,17 @@ export const productReducer = createSlice({
     products: [],
     loading: true,
   },
-  reducers: {},
-
-  //it returns a promise
-  extraReducers: {
-    [fetchProducts.pending]: (state, action) => {
-      state.loading = true;
-    },
-
-    [fetchProducts.fulfilled]: (state, action) => {
-      state.loading = false;
+  reducers: {
+    addItems(state, action) {
       state.products = action.payload;
     },
-
-    [fetchProducts.rejected]: (state, action) => {
-      state.loading = true;
+    filterItems(state, action) {
+      state.products = [];
+      state.products = action.payload;
     },
   },
+
 });
 
+export const { filterItems, addItems } = productReducer.actions;
 export default productReducer.reducer;

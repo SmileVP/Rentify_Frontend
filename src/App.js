@@ -14,6 +14,10 @@ import AddProducts from "./Admin/AddProducts";
 import OrderStatus from "./Admin/OrderStatus";
 import OrderedItems from "./products/OrderedItems";
 import AdminSignUp from "./Admin/AdminSignUp";
+import ForgetPassword from "./components/ForgetPassword";
+import ResetPassword from "./components/ResetPassword";
+import AdminForgotPassword from "./Admin/AdminForgotPassword";
+import AdminResetPassword from "./Admin/AdminResetPassword";
 
 //backend url
 export const url = "https://rentify-backend-w85a.onrender.com";
@@ -25,7 +29,20 @@ function App() {
         <Routes>
         <Route path="/admin-sign-up" element={<AdminSignUp />} />
           <Route path="/admin-login" element={<AdminLogin />} />
+          <Route
+            path="/admin-forgotPassword"
+            element={<AdminForgotPassword />}
+          />
+          <Route
+            path="/admin-reset-password/:id/:token"
+            element={<AdminResetPassword />}
+          />
           <Route path="/customer-login" element={<CustomerLogin />} />
+          <Route path="/forgetPassword" element={<ForgetPassword />} />
+          <Route
+            path="/reset-password/:id/:token"
+            element={<ResetPassword />}
+          />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/customer-sign-up" element={<CustomerSignUp />} />
           <Route path="/navbar" element={<Navigation />} />

@@ -4,9 +4,7 @@ import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 
 function Navigation() {
-
-  let navigate=useNavigate();
- 
+  let navigate = useNavigate();
   return (
     //  <--Navigation details-->
     <div className="navigation container-fluid">
@@ -17,8 +15,8 @@ function Navigation() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-
-            <Nav className="my-2 my-lg-0"
+            <Nav
+              className="my-2 my-lg-0"
               style={{ maxHeight: "10em", gap: "3em", color: "red" }}
               navbarScroll
             >
@@ -29,15 +27,24 @@ function Navigation() {
               <Nav.Link href="#about" style={{ color: "#808DAD" }}>
                 About Us
               </Nav.Link>
-              
+
               <Nav.Link href="#contact" style={{ color: "#808DAD" }}>
                 Contact
               </Nav.Link>
-          
-              <Button variant="success" onClick={()=>navigate("/customer-login")}>Login</Button>
-              <Button variant="warning" className="btn btn-outline-dark" onClick={()=>navigate("/customer-sign-up")}>
-               Sign Up</Button>
-        
+
+              <Button
+                variant="success"
+                onClick={() => navigate("/customer-login")}
+              >
+                Login
+              </Button>
+              <Button
+                variant="warning"
+                className="btn btn-outline-dark"
+                onClick={() => navigate("/customer-sign-up")}
+              >
+                Sign Up
+              </Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
